@@ -1,0 +1,37 @@
+/* auskommentierter Part wäre nach der Aufgabenstellung mit position */
+
+section {
+  background-color: #eeeeee;
+  width: 400px;
+  /* position: relative; */
+  /* height: 70px; */
+}
+
+div {
+  height: 30px;
+  width: 30px;
+  margin: 4px 0;
+  /* position: absolute; */
+  /* left: 0; */
+}
+
+div:first-of-type {
+  background-color: red;
+  transition: all 3s ease-in;
+}
+
+div:last-of-type {
+  background-color: green;
+  transition: all 2s 1s ease-in;
+  /* top: 34px; */
+}
+
+/* section:hover div:first-of-type,
+section:hover div:last-of-type {
+  left: 90%;
+} */
+
+section:hover div:first-of-type,
+section:hover div:last-of-type {
+  transform: translateX(370px);
+}

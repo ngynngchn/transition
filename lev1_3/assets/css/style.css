@@ -1,0 +1,36 @@
+section {
+  width: 400px;
+  display: flex;
+  align-items: flex-end;
+}
+
+div {
+  border-radius: 50%;
+}
+
+.large-ball {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e67bb5;
+  transition: all 1s linear;
+}
+/* outro hat einen delay der noch weg muss */
+.small-ball {
+  width: 50px;
+  height: 50px;
+  margin-left: 45px;
+  background-color: #3c93b5;
+  transition: all 2s ease-in;
+  transition-delay: 1s;
+}
+
+section:active .small-ball {
+  transform: translateX(400px);
+}
+
+section:active .large-ball {
+  transform: translateX(50px);
+}
